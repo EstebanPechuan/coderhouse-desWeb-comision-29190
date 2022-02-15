@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patricia Capra</title>
+
+    <!-- Google Font - Imperial Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Source+Sans+Pro:wght@200;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Futuro CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="menu-active">INICIO</a></li>
+                <li><a href="views/productos.html">PRODUCTOS</a></li>
+                <li><a href="views/testimonios.html">TESTIMONIOS</a></li>
+                <li><a href="views/galeria.html">GALERÍA</a></li>
+                <li><a href="views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero__home">
+            <div class="hero__bg__slider">
+                <!-- Tendrá de fondo el mismo slider que está más abajo pero con blur para distorción de imágenes -->
+                <img src="https://images.unsplash.com/photo-1485546784815-e380f3297414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </div>
+
+            <div class="hero__conteiner">
+                <div class="hero__logo">
+                    <h2>Regalos
+                        <br>
+                        Patri
+                    </h2>
+                </div>
+                <div class="hero__slider">
+                    <!-- Slider -->
+                    <img src="https://images.unsplash.com/photo-1485546784815-e380f3297414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="hero__about">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique corrupti voluptate officiis rerum exercitationem. Iusto animi exercitationem eum aliquam quod sit. Ad, laborum aut, odio enim laboriosam deserunt obcaecati eaque eum itaque tempora illo dolor qui perspiciatis molestias nulla et reprehenderit distinctio soluta! Modi commodi animi nam iure porro.</p>
+                <button>Contáctame</button>
+            </div>
+        </section>
+
+        <section class="productos__home">
+            <h2>Productos</h2>
+            <div class="card__productos">
+                <img src="https://images.pexels.com/photos/5962641/pexels-photo-5962641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <a href="#">Ver todos los Productos</a>
+            </div>
+        </section>
+
+        <section class="testimonios__home">
+            <h2>Testimonios</h2>
+            <div class="card__testimonios">
+                <a href="#">Ver todos los Testimonios</a>
+                <img src="https://images.pexels.com/photos/301703/pexels-photo-301703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © - Desarrollado por Esteban Pechuan</p>
+    </footer>
+
+
+    <script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            const about = document.querySelector('.hero__about')
+
+            header.classList.toggle('header-scroll', window.scrollY > 0)
+            about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+
+            
+        })
+    </script>
+</body>
+
+</html>

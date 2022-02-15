@@ -1,0 +1,10 @@
+:root {
+    --clr-pry: #cb997e;
+    --clr-scd: #6b705c;
+
+    --clr-pry-light: #ddbea9;
+    --clr-scd-light: #a4a48d;
+
+    --fnt-fly-pry: 'Imperial Script', cursive;
+    --fnt-fly-scd: 'Source Sans Pro', sans-serif;
+}
