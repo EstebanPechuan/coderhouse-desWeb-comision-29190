@@ -1,0 +1,134 @@
+@media (max-width: 991px) {
+    .menu {
+        width: 50%;
+        height: 100vh;
+        background: #fffe;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: 0.6s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+    .menu li {
+        display: inline;    
+        list-style-type: none;
+        line-height: 80px;
+        border-left: 2px solid #0003;
+        transition: 0.4s;
+    }    
+    .menu li:first-child {
+        border-left: none;
+    }    
+    .menu li a {
+        padding: 10px 20px;
+        color: #000;
+        position: relative;
+    }    
+    .menu li a.menu-active::after,
+    .menu li a:hover::after {
+        content: '';
+        width: 60%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: 5px;
+        left: 20%;
+    }    
+    .menu.menu-active {
+        width: 30%;
+        height: 100vh;
+        background: #fffc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__conteiner {
+        padding: 50px !important;
+    }
+    .hero__conteiner .hero__logo {
+        display: none;
+    }
+    .hero__conteiner .hero__slider {
+        width: 80%;
+        aspect-ratio: 16/9;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .card__productos img,
+    .card__testimonios img {
+        filter: brightness(40%);
+    }
+    .card__productos a,
+    .card__testimonios a {
+        display: block !important;
+    }
+
+    .cards-container {
+        width: 100%;
+        padding: 0 150px 50px;
+    }
+}
+
+@media (min-width: 991px) {
+    .logo {
+        display: none;
+    }
+    .icons {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+    .cards-container .card-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu.menu-active {
+        width: 50%;
+    }
+
+    .productos__home .card__productos a,
+    .testimonios__home .card__testimonios a {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .productos__home,
+    .testimonios__home {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    .container__contacto {
+        padding: 0 50px 50px;
+    }
+
+    .cards-container {
+        width: 100%;
+        padding: 0 100px 50px;
+    }
+
+    .main-galeria {
+        padding: 0 50px 50px;
+    }
+}
+
+@media (max-width: 574px) {
+    .cards-container {
+        width: 100%;
+        padding: 0 50px 50px;
+    }
+}
