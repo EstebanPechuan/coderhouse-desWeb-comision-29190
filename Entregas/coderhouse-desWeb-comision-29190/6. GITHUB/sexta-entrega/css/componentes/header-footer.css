@@ -1,0 +1,152 @@
+/* Header */
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+    z-index: 5000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    width: 300px;
+    font-size: 50px;
+}
+
+.logo h2 a {
+    font-family: 'Imperial Script', sans-serif !important;
+    color: #fff;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    display: inline;    
+    list-style-type: none;
+    line-height: 80px;
+    border-left: 2px solid #fff3;
+    transition: 0.4s;
+}
+
+.menu li:first-child {
+    border-left: none;
+}
+
+.menu li a {
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.menu li a.menu-active::after,
+.menu li a:hover::after {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
+}
+
+.icons {
+    display: block;
+    filter: invert(1);
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    transform: scale(1.5);
+    display: none;
+}
+
+.icons img.icon-active {
+    transform: scale(1.5);
+    display: block;
+    cursor: pointer;
+}
+
+
+.header-scroll {
+    background: rgba(255, 255, 255, 0.761);
+    height: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+.header-scroll .logo h2 a {
+    color: #000;
+}
+
+.header-scroll li {
+    line-height: 60px;
+    border-color: #0008;
+}
+
+.header-scroll li a {
+    color: #000;
+}
+
+.header-scroll .logo h2 {
+    color: #000;
+}
+.header-scroll .icons {
+    filter: invert(0);
+}
+
+
+.header-gral {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #000;
+}
+
+.header-gral li {
+    border-left: 2px solid #0003;
+}
+
+.header-gral a {
+    color: #000 !important;
+}
+
+.header-gral .menu li a.menu-active::after,
+.header-gral .menu li a:hover::after {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
+}
+
+.header-gral .icons {
+    filter: invert(0);
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 50px;
+    background: var(--clr-scd);
+    color: #fff;
+}
